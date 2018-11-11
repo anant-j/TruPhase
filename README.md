@@ -3,7 +3,7 @@ Shivams-MacBook-Pro:boston shivam$ vim README.md
 # Introduction to TruPhase
 
 
-### How to use the `main.py` file
+### How to use the `Bose_APICore.py` file
 
 
 1.  WORKS ONLY FOR PYTHON 3.6 OR above
