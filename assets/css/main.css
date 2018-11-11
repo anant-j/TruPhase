@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 
+
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -3130,9 +3131,10 @@ input, select, textarea {
 h1{
 	font-size: 80px !important; 
 	color: cyan !important;
+	font-family: Helvetica !important;
 }
-inner.p{
-	font-size: 30px !important; 
+li{
+	color: #D3D3D3 !important;
 }
 
 		table tbody tr {
