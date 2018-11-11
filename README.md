@@ -16,5 +16,7 @@ Shivams-MacBook-Pro:boston shivam$ vim README.md
 
 6.  go to your browser and type `localhost:5000/<ipaddress>`
 
-7.  You have established the main connection with your BOSE SoundTouch device
+7.  You have established the main connection with your BOSE SoundTouch device.  
+
+8. Still the project is still under development, we have used https://academo.org/demos/spectrum-analyzer/ for obtaining frequencues. In fututre, this would be automated and would work under one script.  
 ~                                                                              
