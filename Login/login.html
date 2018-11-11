@@ -2,8 +2,12 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://unpkg.com/onedb-client/dist/onedb-client.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="./onedb.min.js"></script>
+	<title>Sound Tester Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <script>
       window.onedb = new OneDBClient({
         onLogin: function(instance) {
@@ -61,25 +65,35 @@
             })
       }
     </script>
-  </head>
-
-  <body>
+	</head>
+	
+	<body>
+  	<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
     <div class="container">
-      <h1>OneDB Status Updates</h1>
-      <p>Log in below to set your status on OneDB</p>
+	<br><br><br><br><br>
       <div id="LoginForm"></div>
       <script>
         document.getElementById('LoginForm').innerHTML = onedb.loginForm();
       </script>
       <hr>
-
+<br>
       <div id="App" style="display: none">
-        <label>Your Status (<span id="Username"></span>):</label>
         <p id="LatestStatus"></p>
         <form onsubmit="setStatus(); return false">
-<p> You are logged in now</p>
+		<header id="header">
+		<h1><label>Logged In as <span id="Username"></span></label></h1>
+		<p>Boston Hacks 2018</p>
+		<nav>
+		<ul>
+		<a>Click Here to Test Your Music</a>
+		<li><a href="#" class="icon fa-rocket"><span class="label">LEGOO!!</span></a></li>
+		</nav>
+		</header>
         </form>
       </div>
     </div>
+	</div>
   </body>
 </html>
