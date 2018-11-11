@@ -3130,8 +3130,9 @@ input, select, textarea {
 	}
 h1{
 	font-size: 80px !important; 
-	color: cyan !important;
+	color: black !important;
 	font-family: Helvetica !important;
+	
 }
 li{
 	color: #D3D3D3 !important;
@@ -3230,31 +3231,31 @@ li{
 			}
 
 		.wrapper.alt {
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
 		}
 
 		.wrapper.style1 {
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 80%);
+background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+background-image: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
 		}
 
 		.wrapper.style2 {
-background-image: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%);
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%);
 		}
 
 		.wrapper.style3 {
-background-image: linear-gradient(to top, #30cfd0 0%, #330867 80%);
+background-image: linear-gradient(to top, #000000 100%, #c2e9fb 100%);
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+background-image: linear-gradient(to bottom, #000000 100%, #c2e9fb 100%);
 		}
 
 		.wrapper.fullscreen {
