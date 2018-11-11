@@ -1,5 +1,3 @@
-Shivams-MacBook-Pro:boston shivam$ vim README.md
-
 # Introduction to TruPhase
 
 
