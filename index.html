@@ -26,11 +26,13 @@
         ],
       });
 
-      function startApp() {
+      async function startApp() {
         document.getElementById('Username').innerHTML = onedb.hosts.primary.user.$.id;
         document.getElementById('App').setAttribute('style', '')
         showLatestStatus();
-      }
+		window.link1=await onedb.get("mystatus","statusUpdate","EruS1YQ2");
+		window.link2=await onedb.get("mystatus","statusUpdate","CTTaHwyH");
+		}
 
       function endApp() {
         document.getElementById('App').setAttribute('style', 'display: none')
@@ -152,7 +154,7 @@
 									<h2>Test your Speaker Now</h2>
 									<p></p>
 				    <div class="container">
-      <div id="LoginForm"></div>
+      <div id="LoginForm" style="color: black;"></div>
       <script>
         document.getElementById('LoginForm').innerHTML = onedb.loginForm();
       </script>
@@ -162,8 +164,8 @@
         <p id="LatestStatus"></p>
         <form onsubmit="setStatus(); return false">
 		<h2><label>Logged In as <span id="Username"></span></label></h2>
-		<button target="blank" href="#" onclick="window.open('./Bose_APICore.py');
-    window.open('Arduino_Microphone_Driver.pde');">Click Here to open the program, and test the music.</button>
+		<button target="blank" href="#" onclick="window.open(link2.mystatus);
+    window.open(link1.mystatus);">Click Here to open the program, and test the music.</button>
         </form>
       </div>
     </div>
