@@ -33,7 +33,6 @@
         document.getElementById('App').setAttribute('style', '')
         showLatestStatus();
 		window.link1=await onedb.get("mystatus","statusUpdate","EruS1YQ2");
-		window.link2=await onedb.get("mystatus","statusUpdate","CTTaHwyH");
 		}
 
       function endApp() {
@@ -110,7 +109,7 @@
 							<div class="content">
 								<div class="inner">
 									<h2>What does our Web-App do?</h2>
-									<p>This Web-App uses Ardruino's microphone or your system's mircrophone[IN DEVELOPMENT] to record the audio data from your existing BOSE SoundTouch using BOSE's API.<br>We compare this data to the predefined data to evaluate the health of the speaker drivers, and can help in Diagnosis too. </p>
+									<p>This Web-App uses Ardruino's microphone or your system's mircrophone[IN DEVELOPMENT] to record the audio data from your existing BOSE SoundTouch using BOSE's API.<br>We compare this recorded data to the predefined data using factors like voice mpodulation, frequency and volume to evaluate the health of the speaker drivers, and can help in Diagnosis too. </p>
 									<a href="#three" style="font-size: 12px; background-color:black" class="button scrolly">Learn more</a>
 								</div>
 							</div>
@@ -123,7 +122,7 @@
 						<h2 style="color: black;">You will need:</h2>
 						<ul>
 							<li><p style="color: black;">A Bose speaker</p></li>
-								<li><p style="color: black;">A phone with microphone access.</p></li>
+								<li><p style="color: black;">A phone, and an Arduino with Microphone.</p></li>
 							<li><p style="color: black;">A working internet connection.</p></li>
 							<hr style="color: black;">
 						<h2 style="color: black;">Getting IP address of your BOSE SoundTouch speaker</h2>
@@ -141,8 +140,8 @@
 								</section>
 								</div>
 							<ul class="actions">
-								<li><a target="blank" href="https://www.bose.com/en_us/support/article/setting-up-soundtouch-30-20-10-and-portable-wi-fi-music-systems.html" style="font-size: 12px; background-color:black" class="button scrolly">Learn more</a>
-								&nbsp &nbsp &nbsp<a target="blank" href="https://github.com/anant-j/TruPhase" style="font-size: 12px; background-color:black" class="button scrolly">View Source Files</a></li>
+								<li><a target="blank" href="https://www.bose.com/en_us/support/article/setting-up-soundtouch-30-20-10-and-portable-wi-fi-music-systems.html" style="font-size: 12px; background-color:black" class="button scrolly">More information on connection</a>
+								&nbsp &nbsp &nbsp <a target="blank" href="https://github.com/anant-j/TruPhase" style="font-size: 12px; background-color:black" class="button scrolly">View Source Files</a></li>
 							</ul>
 						</div>
 					</section>
@@ -166,8 +165,7 @@
         <p id="LatestStatus"></p>
         <form onsubmit="setStatus(); return false">
 		<h2><label>Logged In as <span id="Username"></span></label></h2>
-		<button target="blank" href="#" onclick="window.open(link2.mystatus);
-    window.open(link1.mystatus);">Click Here to open the program, and test the music.</button>
+		<button href="link1.mystatus" style="background-color: black; border-radius: 10px;" download>Click Here to download the required files securely.</button>
         </form>
       </div>
     </div>
